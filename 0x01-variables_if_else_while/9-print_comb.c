@@ -6,19 +6,19 @@
  */
 int main(void)
 {
-	int l = 0;
+	int a = 0;
 
 
 	while
-		(l < 10);
+		(a < 10);
 		{
-			putchar(l);
-			if (l != 9)
+			putchar(a);
+			if (a != 9)
 			{
 				putchar(',');
 				putchar(' ');
 			}
-			l++;
+			a++;
 		}
 	putchar('\n');
 
