@@ -56,15 +56,5 @@ void print_alphabet_x10(void)
 	}
 }
 
-/**
- * _islower - checks for lowercase character
- *@c: value to be evaluated
- *
- *Return: 1 for lowercase and 0 otherwise
- */
-int _islower(int c)
-{
-
-}
 
 #endif
