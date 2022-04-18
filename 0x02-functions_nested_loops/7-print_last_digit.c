@@ -1,18 +1,15 @@
 #include "main.h"
 
 /**
- * main - check the code
+ * print_last_digit - Prints the last digit of a number
+ * @c: Character being evaluated
  *
- * Return: Always 0.
+ * Return: The last digit of c
  */
-int main(void)
+int print_last_digit(int c)
 {
-    int r;
+	int a;
 
-    print_last_digit(98);
-    print_last_digit(0);
-    r = print_last_digit(-1024);
-    _putchar('0' + r);
-    _putchar('\n');
-    return (0);
+	a = 8;
+	return (a);
 }

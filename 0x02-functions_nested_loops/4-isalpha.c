@@ -1,22 +1,23 @@
 #include "main.h"
 
 /**
- * main - check the code.
+ * _islower - Checks for lowercase character
+ * @c: Character being evaluated
  *
- * Return: Always 0.
+ * Return: 1 for lowercase and 0 otherwise
  */
-int main(void)
+int _isalpha(int c)
 {
-    int r;
-
-    r = _isalpha('H');
-    _putchar(r + '0');
-    r = _isalpha('o');
-    _putchar(r + '0');
-    r = _isalpha(108);
-    _putchar(r + '0');
-    r = _isalpha(';');
-    _putchar(r + '0');
-    _putchar('\n');
-    return (0);
+	if (c >= 97 && c <= 122)
+	{
+		return (1);
+	}
+	else if (c >= 65 && c <= 90)
+	{
+		return (1);
+	}
+	else
+	{
+		return (0);
+	}
 }
