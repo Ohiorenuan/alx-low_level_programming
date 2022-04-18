@@ -22,7 +22,6 @@ void times_table(void)
 			mult = i * j;
 			if (mult <= 9)
 			{
-				_putchar(' ');
 				_putchar('0' + mult);
 				_putchar(',');
 				_putchar(' ');
