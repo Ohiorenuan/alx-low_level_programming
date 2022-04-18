@@ -10,10 +10,21 @@ int print_last_digit(int c)
 {
 	if (c < 0)
 	{
-		return (-c % 10);
+		int a;
+		char b;
+
+		a = -c % 10;
+		b = (char)a;
+		_putchar(b);
+		return (a);
 	}
 	else
 	{
-		return (c % 10);
+		int d;
+		char e;
+
+		d = c % 10;
+		e = (char)d;
+		return (e);
 	}
 }
