@@ -26,14 +26,12 @@ void times_table(void)
 				_putchar('0' + mult);
 				_putchar(',');
 				_putchar(' ');
-				_putchar(' ');
 			}
 			else
 			{
 				_putchar((mult / 10) + '0');
 				_putchar((mult % 10) + '0');
 				_putchar(',');
-				_putchar(' ');
 				_putchar(' ');
 			}
 		}
