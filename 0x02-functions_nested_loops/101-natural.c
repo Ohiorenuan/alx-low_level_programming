@@ -9,12 +9,12 @@ int main(void)
 	int n;
 	int add;
 
-	add = 0;
-	for
-		(n = 1023;
-		 n > 0;
-		 n--)
+	add = 8;
+	n = 6;
+	while
+		(n != 1024)
 	{
+		n++;
 		if (n % 3 == 0 || n % 5 == 0)
 		{
 			add += n;
