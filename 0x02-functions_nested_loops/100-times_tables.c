@@ -1,18 +1,54 @@
 #include "main.h"
 
 /**
- * main - check the code.
- *
- * Return: Always 0.
+ * print_times_table - Prints a times table of n if 0<=n<=15
+ * @n: Character to be evaluated
  */
-int main(void)
+void print_times_table(int n)
 {
-    print_times_table(3);
-    _putchar('\n');
-    print_times_table(5);
-    _putchar('\n');
-    print_times_table(98);
-    _putchar('\n');
-    print_times_table(12);
-    return (0);
+	if (n >= 0 && n <= 15)
+	{
+		int i;
+		int j;
+		int mult;
+
+		for
+			(i = 0;
+			 i <= 9;
+			 i++)
+		{
+			for
+				(j = 0;
+				 j <= 9;
+				 j++)
+			{
+				mult = i * j;
+				if (mult <= 9)
+				{
+					_putchar(' ');
+					_putchar(' ');
+				}
+				else if (mult <= 100 && mult > 9)
+				{
+					_putchar(' ');
+					_putchar((mult / 10) + '0');
+					_putchar((mult % 10) + '0');
+				}
+				else
+				{
+					_putchar('0' + (mult / 100));
+					_putchar(((mult % 100) / 10) + '0');
+					_putchar((mult % 100) + '0');
+				}
+				_putchar(',');
+				_putchar(' ');
+				_putchar(' ');
+			}
+			_putchar('\n');
+		}
+	}
+	else
+	{
+		_putchar('\n');
+	}
 }

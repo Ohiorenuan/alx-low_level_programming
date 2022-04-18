@@ -11,20 +11,17 @@ int print_last_digit(int c)
 	if (c < 0)
 	{
 		int a;
-		char b;
 
 		a = -c % 10;
-		b = (char)a;
-		_putchar(b);
+		_putchar('0' + a);
 		return (a);
 	}
 	else
 	{
-		int d;
-		char e;
+		int a;
 
-		d = c % 10;
-		e = (char)d;
-		return (e);
+		a = c % 10;
+		_putchar('0' + a);
+		return (a);
 	}
 }
