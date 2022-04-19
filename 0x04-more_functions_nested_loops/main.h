@@ -15,7 +15,7 @@ int _putchar(char c);
  *
  * Return: 1 for uppercase and 0 otherwise
  */
-int _islower(int c);
+int _isupper(int c);
 
 /**
  * _isdigit - Checks for digit
