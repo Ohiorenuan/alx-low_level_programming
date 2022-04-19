@@ -68,4 +68,10 @@ void print_square(int size);
  */
 void print_triangle(int size);
 
+/**
+ * print_diagonal - Prints a diagonal on the terminal
+ * @n: The number of the character '\'
+ */
+void print_diagonal(int n);
+
 #endif
