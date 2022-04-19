@@ -9,7 +9,7 @@ int main(void)
 	unsigned long num, a, b;
 
 	num = 612852475143;
-	a = 2;
+	a = 3;
 	b = 0;
 	while (num != 1)
 	{
@@ -28,4 +28,5 @@ int main(void)
 		}
 	}
 	printf("%lu\n", b);
+	return (0);
 }
