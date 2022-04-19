@@ -2,6 +2,14 @@
 #define MAIN_H
 
 /**
+ * _putchar - Prints out a character
+ * @c: Character to be printed
+ *
+ * Return: The character c
+ */
+int _putchar(char c);
+
+/**
  * _isupper - Checks for uppercase character
  * @c: Character being evaluated
  *
