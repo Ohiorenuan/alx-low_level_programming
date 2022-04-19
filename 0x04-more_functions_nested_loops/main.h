@@ -56,4 +56,16 @@ void more_numbers(void);
  */
 void print_line(int n);
 
+/**
+ * print_square - Prints a square followed by a new line
+ * @size: The legth of the square
+ */
+void print_square(int size);
+
+/**
+ * print_triangle - Prints a new line
+ * @size: The size of the triangle
+ */
+void print_triangle(int size);
+
 #endif
