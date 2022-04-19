@@ -74,4 +74,10 @@ void print_triangle(int size);
  */
 void print_diagonal(int n);
 
+/**
+ * print_number - Prints out an integer
+ * @n: The integer to be printed
+ */
+void print_number(int n);
+
 #endif
