@@ -4,22 +4,28 @@
  */
 void more_numbers(void)
 {
-	int count, num;
+	int count, num, n;
 
 	count = 0;
-	num = 0;
+	num = 9;
 
-	while
-		(count < 10)
+	while (count < 2)
 	{
-		for
-			(num = 0;
-			 num <= 14;
-			 num++)
+		if (count == 1)
 		{
-			_putchar(alph);
+			num = 4;
 		}
-		_putchar('\n');
+		for (n = 0;
+		     n <= num;
+		     n++)
+		{
+			if (count == 1)
+			{
+				_putchar(1 + '0');
+			}
+			_putchar(n + '0');
+		}
 		count++;
 	}
+	_putchar('\n');
 }
