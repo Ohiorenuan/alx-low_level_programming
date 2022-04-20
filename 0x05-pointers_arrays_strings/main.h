@@ -22,4 +22,30 @@ void reset_to_98(int *n);
  */
 void swap_int(int *a, int *b);
 
+/**
+ * _strlen - Returns the length of a string
+ * @s: String to be evaulated
+ * Return: The length of the s
+ */
+int _strlen(char *s);
+
+/**
+ * _puts - Prints a string to standard output
+ * @str: String to be printed
+ */
+void _puts(char *str);
+
+/**
+ * print_rev - Prints a string in reverse
+ * @s: The string to be reversed
+ */
+void print_rev(char *s);
+
+#include "main.h"
+/**
+ * rev_string - Prints a string in reverse
+ * @s: The string to be reversed
+ */
+void rev_string(char *s);
+
 #endif
