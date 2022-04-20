@@ -48,4 +48,17 @@ void print_rev(char *s);
  */
 void rev_string(char *s);
 
+/**
+ * puts2 - Prints every other character of a string
+ * @str: String to be changed
+ */
+void puts2(char *str);
+
+/**
+ * print_array - Prints n elements of an array of integers
+ * @a: Array to be printed
+ * @n: Number of elements in a
+ */
+void print_array(int *a, int n);
+
 #endif
