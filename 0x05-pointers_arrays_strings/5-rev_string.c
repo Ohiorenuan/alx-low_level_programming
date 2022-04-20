@@ -5,24 +5,24 @@
  */
 void rev_string(char *s)
 {
-	int i, j;
+	int i;
+	char *a, b;
 
-	i = 1;
+	i = 0;
 	j = 0;
-	while (*s)
+	b = s;
+	a = '\0';
+	while (s[i])
 	{
 		i++;
-		*s++;
 	}
-	char a[i - 1];
 
 	while (i)
 	{
-		a[j] = *(s - 1);
+		*(b - i)  = s[i - 1];
 		i--;
-		j++;
-		*s--;
+/*		j++;*/
 	}
-	_putchar(a[0] + '0');
-	s = a;
+	_putchar(b[3]);
+
 }

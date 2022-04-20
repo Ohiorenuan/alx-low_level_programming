@@ -5,10 +5,13 @@
  */
 void _puts(char *str)
 {
-	while (*str)
+	int i;
+
+	i = 0;
+	while (str[i])
 	{
-		_putchar(*str);
-		*str++;
+		_putchar(str[i]);
+		i++;
 	}
 	_putchar('\n');
 }
