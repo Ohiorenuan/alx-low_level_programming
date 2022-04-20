@@ -6,11 +6,12 @@
  */
 int _atoi(char *s)
 {
-	int i, a, b, c;
+	int i, a, c;
 	unsigned int num;
 
-	i = a = b = 0;
+	i = 0;
 	num = 0;
+	a = 1;
 
 	while (s[i])
 	{
@@ -21,11 +22,7 @@ int _atoi(char *s)
 		}
 		if (s[i] == '-' && c != 1)
 		{
-			a++;
-		}
-		if (s[i] == '+' && c != 1)
-		{
-			b++;
+			a *= -1;
 		}
 		if (!(s[i] > 47 && s[i] < 58) && (c == 1))
 		{
@@ -33,13 +30,5 @@ int _atoi(char *s)
 		}
 		i++;
 	}
-	if ((a > b) && c == 1)
-	{
-		num = -num;
-	}
-	else if (c != 1)
-	{
-		num = 0;
-	}
-	return (num);
+	return (num * a);
 }
