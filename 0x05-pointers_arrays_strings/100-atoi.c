@@ -6,7 +6,8 @@
  */
 int _atoi(char *s)
 {
-	int i, a, b, c, num;
+	int i, a, b, c;
+	unsigned num;
 
 	i = a = b = 0;
 	num = 0;
