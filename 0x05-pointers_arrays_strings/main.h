@@ -61,4 +61,25 @@ void puts2(char *str);
  */
 void print_array(int *a, int n);
 
+/**
+ * puts_half - Prints half of a string
+ * @str: The string to be printed
+ */
+void puts_half(char *str);
+
+/**
+ * _atoi - Converts a string to a integer
+ * @s: The string to be converted
+ * Return: values depending on result
+ */
+int _atoi(char *s);
+
+/**
+ * _strcpy - Copies strings pointed to by src
+ * @dest: the pointer to dest
+ * @src: string pointed to
+ * Return: the pointer to dest
+ */
+char *_strcpy(char *dest, char *src);
+
 #endif
