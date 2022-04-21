@@ -5,24 +5,29 @@
  */
 void rev_string(char *s)
 {
-	int i;
-	char *a, b;
+	int n, i, a;
+	char *front, *back;
 
-	i = 0;
-	j = 0;
-	b = s;
-	a = '\0';
-	while (s[i])
+	n = a = 0;
+	front = back = s;
+	while (s[n])
 	{
-		i++;
+		n++;
 	}
-
-	while (i)
+	i = n / 2;
+	while (n > 0)
 	{
-		*(b - i)  = s[i - 1];
-		i--;
-/*		j++;*/
+		if (a <= i)
+		{
+			s[a] = back[n - 1];
+			a++;
+			i--;
+		}
+		else
+		{
+			s[a] = front[n - 1];
+			a++;
+			i--;
+		}
 	}
-	_putchar(b[3]);
-
 }
