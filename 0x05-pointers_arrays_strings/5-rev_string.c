@@ -9,7 +9,8 @@ void rev_string(char *s)
 	char *front, *back;
 
 	n = a = 0;
-	front = back = s;
+	front = s;
+	back = s;
 	while (s[n])
 	{
 		n++;
@@ -17,17 +18,17 @@ void rev_string(char *s)
 	i = n / 2;
 	while (n > 0)
 	{
-		if (a <= i)
+		if (a < i)
 		{
 			s[a] = back[n - 1];
 			a++;
-			i--;
+			n--;
 		}
 		else
 		{
 			s[a] = front[n - 1];
 			a++;
-			i--;
+			n--;
 		}
 	}
 }
