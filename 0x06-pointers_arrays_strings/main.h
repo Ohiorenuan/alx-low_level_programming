@@ -10,7 +10,7 @@
 int _putchar(char c);
 
 /**
- * _strncat - appends a string to the dest string
+ * _strcat - appends a string to the dest string
  * @dest: The string being appended to
  * @src: The string being appended
  * Return: The pointer dest
@@ -25,6 +25,15 @@ char *_strcat(char *dest, char *src);
  * Return: The pointer dest
  */
 char *_strncat(char *dest, char *src, int n);
+
+/**
+ * _strncpy - Works like strncpy
+ * @dest: String being appended to
+ * @src: String being appended from
+ * @n: The number of bytes being appended
+ * Return: The modified string
+ */
+char _strncpy(char *dest, char *src, int n);
 
 /**
  * _strcmp - Works like strcmp
@@ -64,10 +73,10 @@ char *leet(char *a);
 
 /**
  * rot13 - Encodes a string using rot13
- * @a: The string to be modified
+ * @str: The string to be modified
  * Return: The modified string
  */
-char *rot13(char *a);
+char *rot13(char *str);
 
 /**
  * print_number - Prints an integer
