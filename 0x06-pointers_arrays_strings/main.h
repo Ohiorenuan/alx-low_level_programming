@@ -33,7 +33,7 @@ char *_strncat(char *dest, char *src, int n);
  * @n: The number of bytes being appended
  * Return: The modified string
  */
-char _strncpy(char *dest, char *src, int n);
+char *_strncpy(char *dest, char *src, int n);
 
 /**
  * _strcmp - Works like strcmp

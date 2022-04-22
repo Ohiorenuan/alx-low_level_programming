@@ -6,7 +6,7 @@
  * @n: The number of bytes being appended
  * Return: The modified string
  */
-char _strncpy(char *dest, char *src, int n)
+char *_strncpy(char *dest, char *src, int n)
 {
 	int i, j;
 
@@ -15,15 +15,18 @@ char _strncpy(char *dest, char *src, int n)
 	{
 		i++;
 	}
-	while (j < n && src[j])
+	while (j < n)
 	{
-		if (src[j] == '\n')
+		if (j < i)
+		{
+			dest[j] = src[j];
+		}
+		else
 		{
 			dest[j] = '\0';
-			break;
 		}
-		dest[j] = src[j];
 		j++;
 	}
+
 	return (dest);
 }
