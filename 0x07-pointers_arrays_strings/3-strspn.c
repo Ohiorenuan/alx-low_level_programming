@@ -24,3 +24,17 @@ unsigned int _strspn(char *s, char *accept)
 	}
 	return (num);
 }
+/**
+ * _count - Counts the number of items in a string
+ * @s: The string to be counted
+ * Return: The number of terms
+ */
+int _count(char *s);
+{
+	unsigned int num;
+
+	num = 0;
+	while (s[num])
+		num++;
+	return (num);
+}
