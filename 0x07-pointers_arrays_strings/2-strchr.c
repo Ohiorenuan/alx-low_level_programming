@@ -7,8 +7,8 @@
  */
 char *_strchr(char *s, char c)
 {
-	int n, i;
-	char *a = 0;
+	unsigned int n, i;
+	char *a = '\0';
 
 	i = 0;
 	n = _count(s);
@@ -16,7 +16,7 @@ char *_strchr(char *s, char c)
 	{
 		if (s[i] == c)
 		{
-			a = s[i];
+			a = &s[i];
 			break;
 		}
 		i++;
@@ -28,7 +28,7 @@ char *_strchr(char *s, char c)
  * @s: The string to be counted
  * Return: The number of terms
  */
-int _count(char *s);
+int _count(char *s)
 {
 	unsigned int num;
 

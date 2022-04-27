@@ -27,7 +27,7 @@ char *_strstr(char *haystack, char *needle)
 				j++;
 				if (j == n2)
 				{
-					a = haystack[i];
+					a = &haystack[i];
 					i = n1;
 				}
 			}
@@ -35,4 +35,18 @@ char *_strstr(char *haystack, char *needle)
 		i++;
 	}
 	return (a);
+}
+/**
+ * _count - Counts the number of items in a string
+ * @s: The string to be counted
+ * Return: The number of terms
+ */
+int _count(char *s)
+{
+	unsigned int num;
+
+	num = 0;
+	while (s[num])
+		num++;
+	return (num);
 }

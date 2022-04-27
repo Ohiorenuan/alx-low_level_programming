@@ -19,7 +19,7 @@ char *_strpbrk(char *s, char *accept)
 		{
 			if (s[i] == accept[j])
 			{
-				a = s[i];
+				a = &s[i];
 				i = n;
 				break;
 			}
@@ -34,7 +34,7 @@ char *_strpbrk(char *s, char *accept)
  * @s: The string to be counted
  * Return: The number of terms
  */
-int _count(char *s);
+int _count(char *s)
 {
 	unsigned int num;
 

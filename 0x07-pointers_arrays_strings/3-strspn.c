@@ -14,6 +14,8 @@ unsigned int _strspn(char *s, char *accept)
 	while (i < n)
 	{
 		j = 0;
+		if (s[i] == ' ')
+			break;
 		while (accept[j])
 		{
 			if (s[i] == accept[j])
@@ -29,7 +31,7 @@ unsigned int _strspn(char *s, char *accept)
  * @s: The string to be counted
  * Return: The number of terms
  */
-int _count(char *s);
+int _count(char *s)
 {
 	unsigned int num;
 

@@ -2,6 +2,15 @@
 #define MAIN_H
 
 /**
+ * _putchar - writes the character c to stdout
+ * @c: The character to print
+ *
+ * Return: On success 1.
+ * On error, -1 is returned, and errno is set appropriately.
+ */
+int _putchar(char c);
+
+/**
  * _memset - Fills memory with a constant byte
  * @s: The buffer to be filled
  * @b: The constant byte
@@ -70,6 +79,13 @@ void print_diagsums(int *a, int size);
  * @to: The string
  */
 void set_string(char **s, char *to);
+
+/**
+ * _count - Counts the number of items in a string
+ * @s: The string to be counted
+ * Return: The number of terms
+ */
+int _count(char *s);
 
 
 #endif
