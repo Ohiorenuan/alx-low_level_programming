@@ -73,4 +73,20 @@ int is_palindrome(char *s);
  */
 int wildcmp(char *s1, char *s2);
 
+/**
+ * act_func - Does the job of _sqrt_recursion and preserves my sanity
+ * @n: The number which sqrt is being evaluated
+ * @a: A counter because I need a counter
+ * Return: The sqrt or -1 if non is found
+ */
+int act_func(int n, int a);
+
+/**
+ * is_func - Does the job of is_prime_number
+ * @n: The number to be evaluated
+ * @a: Counter
+ * Return: 1 if prime, 0 if not
+ */
+int is_func(int n, int a);
+
 #endif
