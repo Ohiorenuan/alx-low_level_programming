@@ -89,4 +89,28 @@ int act_func(int n, int a);
  */
 int is_func(int n, int a);
 
+/**
+ * comp - Does the work of is_palidrome
+ * @s: The string being evaluated
+ * @b: The same string as s
+ * @a: Counter
+ * Return: 1 if palidrome, 0 if not
+ */
+int comp(char *s, char *b, int a);
+
+/**
+ * mov1 - Moves the imaginary cursor to a non '*' character
+ * @s: The string being modified
+ * Return: The new string position
+ */
+char *mov1(char *s);
+
+/**
+ * mov2 - Moves the imaginary cursor to the next apperance of character
+ * @s: The string being modified
+ * @a: The character being searched for
+ * Return: The modified string
+ */
+char *mov2(char *s, char a);
+
 #endif
