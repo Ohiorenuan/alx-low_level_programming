@@ -7,16 +7,16 @@
  * Return: The value 0
  */
 int main(int argc, char *argv[])
-{int sum, r, i;
+{unsigned int sum, r, i;
 
 	sum = r = 0;
 	if (argc < 2)
 		printf("%d\n", sum);
-	for (i = 1; i < argc; i++)
+	for (i = 1; i < (unsigned)argc; i++)
 	{
 		if (atoi(argv[i]))
 		{ sum += atoi(argv[i]);
-			if (i == argc - 1)
+			if (i == (unsigned)argc - 1)
 				printf("%d\n", sum); }
 		else
 		{ printf("%s\n", "Error");
