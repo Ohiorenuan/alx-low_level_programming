@@ -10,7 +10,7 @@ char *_strpbrk(char *s, char *accept)
 	unsigned int n, i, j;
 	char *a = 0;
 
-	n = _count(s);
+	n = (unsigned)sizeof(s);
 	i = 0;
 	while (i < n)
 	{
@@ -28,18 +28,4 @@ char *_strpbrk(char *s, char *accept)
 		i++;
 	}
 	return (a);
-}
-/**
- * _count - Counts the number of items in a string
- * @s: The string to be counted
- * Return: The number of terms
- */
-int _count(char *s)
-{
-	unsigned int num;
-
-	num = 0;
-	while (s[num])
-		num++;
-	return (num);
 }

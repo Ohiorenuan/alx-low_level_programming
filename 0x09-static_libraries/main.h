@@ -162,11 +162,4 @@ char *_strpbrk(char *s, char *accept);
  */
 char *_strstr(char *haystack, char *needle);
 
-/**
- * _count - Counts the number of items in a string
- * @s: The string to be counted
- * Return: The number of terms
- */
-int _count(char *s);
-
 #endif
