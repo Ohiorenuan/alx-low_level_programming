@@ -16,10 +16,12 @@ char *str_concat(char *s1, char *s2)
 		size1++;
 	for (i = 0; s2[i]; i++)
 		size2++;
-	if (size1 != 0 && size2 != 0)
+	if (size1 != 0 || size2 != 0)
 	{ dest = malloc((size1 + size2) * sizeof(char) + 1);
 		for (i = 0; s1[i]; i++)
 			dest[i] = s1[i];
 		for (i = 0; i <= size2; i++)
 			dest[size1 + i] = s2[i]; }
+	else
+		dest = 0;
 	return (dest); }
