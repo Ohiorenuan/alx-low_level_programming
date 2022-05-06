@@ -25,4 +25,5 @@ char *str_concat(char *s1, char *s2)
 			dest[size1 + i] = s2[i]; }
 	else
 		dest = NULL;
-	return (dest); }
+	return (dest);
+	free(dest); }
