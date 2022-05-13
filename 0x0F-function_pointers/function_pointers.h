@@ -1,5 +1,17 @@
 #ifndef __FUNCTIONS_POINTERS__
 #define __FUNCTIONS_POINTERS__
+
+#include <stdlib.h>
+
+/**
+ * _putchar - writes the character c to stdout
+ * @c: The character to print
+ *
+ * Return: On success 1.
+ * On error, -1 is returned, and errno is set appropriately.
+ */
+int _putchar(char c);
+
 /**
  * print_name - Prints a name
  * @name: The name to be printed
