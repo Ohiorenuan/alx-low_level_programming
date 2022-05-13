@@ -2,6 +2,18 @@
 #define __3_CALC__
 
 /**
+ * struct op - Struct op
+ *
+ * @op: The operator
+ * @f: The function associated
+ */
+typedef struct op
+{
+	char *op;
+	int (*f)(int a, int b);
+} op_t;
+
+/**
  * op_add - Returns sum of two numbers
  * @a: One of the number to be operated on
  * @b: One of the number to be operated on
@@ -40,5 +52,12 @@ int op_mul(int a, int b);
  * Return: - Remainder of division of a and b
  */
 int op_mod(int a, int b);
+
+/**
+ * get_op_func - Select operation
+ * @s: Operation symbol
+ * Return: The function operation
+ */
+int (*get_op_func(char *s))(int a, int b);
 
 #endif
