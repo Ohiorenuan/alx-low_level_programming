@@ -11,7 +11,7 @@ int main(int argc, char **argv)
 {
 	int a, b, result, (*func)(int, int);
 
-	if (argc > 4)
+	if (argc != 4)
 	{ printf("%s\n", "Error");
 		exit(98); }
 	a = atoi(argv[1]);
