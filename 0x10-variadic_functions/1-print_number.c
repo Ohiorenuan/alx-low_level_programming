@@ -2,7 +2,7 @@
 #include <stdio.h>
 /**
  * print_numbers - Prints numbers, followed by a new line
- * @seperator: The symbol to seperate printed numbers
+ * @separator: The symbol to seperate printed numbers
  * @n: Number of integers passed
  */
 void print_numbers(const char *separator, const unsigned int n, ...)
