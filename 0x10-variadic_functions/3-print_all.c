@@ -8,12 +8,12 @@ void print_all(const char * const format, ...)
 {
 	va_list list;
 	char c;
-	int i;
+	int i, j;
 	float f;
-	char *s;
+	char *str;
 	char swi;
 
-	i = 0;
+	i = j = 0;
 	va_start(list, format);
 	while (format[i])
 	{
@@ -23,26 +23,32 @@ void print_all(const char * const format, ...)
 		case 'c':
 			c = va_arg(list, int);
 			printf("%c", c);
+			j = 1;
 			break;
 		case 'i':
 			i = va_arg(list, int);
 			printf("%d", i);
+			j = 1;
 			break;
 		case 'f':
 			f = va_arg(list, double);
 			printf("%f", f);
+			j = 1;
 			break;
 		case 's':
-			s = va_arg(list, char *);
-			if (s == NULL)
+			str = va_arg(list, char *);
+			if (str == NULL)
 			{ printf("(nil)");
+				j = 1;
 				break; }
-			printf("%s", s);
+			printf("%s", str);
+			j = 1;
 			break;
 		default:
+			j = 0;
 			break;
 		}
-		if (format[i + 1])
+		if (format[i + 1] && j)
 			printf(", ");
 		i++; }
 	printf("\n"); }
