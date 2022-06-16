@@ -11,25 +11,25 @@ size_t print_list(const list_t *h)
 	size_t i;
 
 	if (h)
-		i = 1;
-	else
-		i = 0;
-	temp = NULL;
-	temp = malloc(sizeof(list_t));
-	if (h->str)
-		printf("[%d] %s\n", h->len, h->str);
-	else
-		printf("[0] (nil)\n");
-	if (temp)
-		temp = h->next;
-	while (temp)
-	{ i++;
-		if (temp->str)
-			printf("[%d] %s\n", temp->len, temp->str);
+	{ i = 1;
+		temp = NULL;
+		temp = malloc(sizeof(list_t));
+		if (h->str)
+			printf("[%d] %s\n", h->len, h->str);
 		else
 			printf("[0] (nil)\n");
-		temp = temp->next;
-	}
-	free(temp);
+		if (temp)
+			temp = h->next;
+		while (temp)
+		{ i++;
+			if (temp->str)
+				printf("[%d] %s\n", temp->len, temp->str);
+			else
+				printf("[0] (nil)\n");
+			temp = temp->next;
+		}
+		free(temp); }
+	else
+		i = 0;
 	return (i);
 }
